@@ -54,7 +54,7 @@ set ruler " Show ruler
 
 
 " Line Wrapping ***************************************************************
-set nowrap
+"set nowrap
 set linebreak  " Wrap at word
 
 
