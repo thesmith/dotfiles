@@ -30,3 +30,4 @@ set columns=120
 set lines=45
 
 set guitablabel=%t " set label for tab to just file name
+colorscheme ir_dark
