@@ -1,2 +1,8 @@
 .DS_Store
 *.sw?
+target/
+opensocial-core/target/
+opensocial-server/target/
+scheduler/target/
+sgapi/target/
+sgnodemapper/target/

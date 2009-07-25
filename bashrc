@@ -33,7 +33,9 @@ alias vi='vim'
 alias screen='TERM=screen screen'
 
 export TERM=xterm-color
-export PATH=$PATH:/var/lib/gems/1.8/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin
-export JAVA_HOME=/usr/lib/jvm/java-1.5.0-sun
+export PATH=$PATH:/var/lib/gems/1.8/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/usr/share/ant/bin
 #export GEM_HOME=/usr/lib/ruby/gems/1.8
 #export RUBYLIB=/usr/lib/ruby/1.8:/usr/local/lib/site_ruby/1.8
+export ECHO_NEST_API_KEY=AFB4HZSDSRBTJGC5Q
+
+source ~/projects/identity/etc/scripts/curl.sh
