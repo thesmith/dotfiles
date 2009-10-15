@@ -238,13 +238,14 @@
 "=============================================================================
 
 " INCLUDE GUARD: ======================================================== {{{1
-if v:version < 701
+if v:version < 0
   echoerr "Sorry, Autocomplpop doesn't support this version of Vim."
   finish
 elseif exists('loaded_autocomplpop')
   finish
 endif
 let loaded_autocomplpop = 1
+
 
 
 " FUNCTION: ============================================================= {{{1

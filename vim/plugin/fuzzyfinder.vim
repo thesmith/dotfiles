@@ -359,13 +359,14 @@
 "=============================================================================
 
 " INCLUDE GUARD: ======================================================== {{{1
-if v:version < 701
+if v:version < 0
   echoerr "Sorry, Fuzzyfinder doesn't support this version of Vim."
   finish
 elseif exists('loaded_fuzzyfinder')
   finish
 endif
 let loaded_fuzzyfinder = 1
+
 
 
 " FUNCTION: CORE FUNCTIONS: ============================================= {{{1
