@@ -33,9 +33,10 @@ alias vi='vim'
 alias screen='TERM=screen screen'
 
 export TERM=xterm-color
-export PATH=$PATH:/var/lib/gems/1.8/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/usr/share/ant/bin
+export SCALA_HOME=/opt/local
+export PATH=$PATH:/var/lib/gems/1.8/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/usr/share/ant/bin:$SCALA_HOME/bin:/Library/appengine-java-sdk-1.2.6/bin
 #export GEM_HOME=/usr/lib/ruby/gems/1.8
 #export RUBYLIB=/usr/lib/ruby/1.8:/usr/local/lib/site_ruby/1.8
 export ECHO_NEST_API_KEY=AFB4HZSDSRBTJGC5Q
 
-source ~/projects/identity/etc/scripts/curl.sh
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
