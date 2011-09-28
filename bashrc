@@ -42,11 +42,15 @@ alias fpm_start='launchctl load /usr/local/Cellar/php/5.3.6/org.php.php-fpm.plis
 alias fpm_stop='launchctl unload /usr/local/Cellar/php/5.3.6/org.php.php-fpm.plist'
 alias fpm_restart='fpm_stop; fpm_start'
 
+alias masteruk='ssh master.uk.top10.com'
+alias masterus='ssh master.top10.com'
+
 export TERM=xterm-color
-export SCALA_HOME=/opt/local
-export PATH=$PATH:/var/lib/gems/1.8/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/usr/share/ant/bin:$SCALA_HOME/bin:/Library/appengine-java-sdk-1.2.6/bin:./bin
+export SCALA_HOME=/Users/bens/bin/scala
+export PATH=$PATH:/var/lib/gems/1.8/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/usr/share/ant/bin:$SCALA_HOME/bin:/Library/appengine-java-sdk-1.2.6/bin:./bin:.:~/bin
 #export GEM_HOME=/usr/lib/ruby/gems/1.8
 #export RUBYLIB=/usr/lib/ruby/1.8:/usr/local/lib/site_ruby/1.8
 export ECHO_NEST_API_KEY=AFB4HZSDSRBTJGC5Q
+export export AKKA_HOME=/Users/bens/projects/akka-actors-1.1.3
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
