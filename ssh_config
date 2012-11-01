@@ -17,9 +17,6 @@
 # list of available options, their meanings and defaults, please see the
 # ssh_config(5) man page.
 
-#ControlMaster auto
-#ControlPath   /home/bens/.ssh/tmp/%h_%p_%r
-
 Host masteruk
     HostName master.uk.top10.com
 
@@ -31,6 +28,48 @@ Host dev
 
 Host proc1auk
     ProxyCommand ssh -q masteruk nc -q0 proc1a 22
+    CheckHostIP no
+    ServerAliveInterval 60
+    ForwardAgent yes
+
+Host proc1buk
+    ProxyCommand ssh -q masteruk nc -q0 proc1b 22
+    CheckHostIP no
+    ServerAliveInterval 60
+    ForwardAgent yes
+
+Host api1auk
+    ProxyCommand ssh -q masteruk nc -q0 api1a 22
+    CheckHostIP no
+    ServerAliveInterval 60
+    ForwardAgent yes
+
+Host api1buk
+    ProxyCommand ssh -q masteruk nc -q0 api1b 22
+    CheckHostIP no
+    ServerAliveInterval 60
+    ForwardAgent yes
+
+Host api1aus
+    ProxyCommand ssh -q masterus nc -q0 api1a 22
+    CheckHostIP no
+    ServerAliveInterval 60
+    ForwardAgent yes
+
+Host api1bus
+    ProxyCommand ssh -q masterus nc -q0 api1b 22
+    CheckHostIP no
+    ServerAliveInterval 60
+    ForwardAgent yes
+
+Host lb1auk
+    ProxyCommand ssh -q masteruk nc -q0 lb1a 22
+    CheckHostIP no
+    ServerAliveInterval 60
+    ForwardAgent yes
+
+Host lb1aus
+    ProxyCommand ssh -q masterus nc -q0 lb1a 22
     CheckHostIP no
     ServerAliveInterval 60
     ForwardAgent yes
@@ -55,6 +94,12 @@ Host stage
 
 Host proc1aus
     ProxyCommand ssh -q masterus nc -q0 proc1a 22
+    CheckHostIP no
+    ServerAliveInterval 60
+    ForwardAgent yes
+
+Host proc1bus
+    ProxyCommand ssh -q masterus nc -q0 proc1b 22
     CheckHostIP no
     ServerAliveInterval 60
     ForwardAgent yes
