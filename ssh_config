@@ -38,6 +38,42 @@ Host proc1buk
     ServerAliveInterval 60
     ForwardAgent yes
 
+Host api1auk
+    ProxyCommand ssh -q masteruk nc -q0 api1a 22
+    CheckHostIP no
+    ServerAliveInterval 60
+    ForwardAgent yes
+
+Host api1buk
+    ProxyCommand ssh -q masteruk nc -q0 api1b 22
+    CheckHostIP no
+    ServerAliveInterval 60
+    ForwardAgent yes
+
+Host api1aus
+    ProxyCommand ssh -q masterus nc -q0 api1a 22
+    CheckHostIP no
+    ServerAliveInterval 60
+    ForwardAgent yes
+
+Host api1bus
+    ProxyCommand ssh -q masterus nc -q0 api1b 22
+    CheckHostIP no
+    ServerAliveInterval 60
+    ForwardAgent yes
+
+Host lb1auk
+    ProxyCommand ssh -q masteruk nc -q0 lb1a 22
+    CheckHostIP no
+    ServerAliveInterval 60
+    ForwardAgent yes
+
+Host lb1aus
+    ProxyCommand ssh -q masterus nc -q0 lb1a 22
+    CheckHostIP no
+    ServerAliveInterval 60
+    ForwardAgent yes
+
 Host redis1auk
     ProxyCommand ssh -q masteruk nc -q0 redis1a 22
     CheckHostIP no
