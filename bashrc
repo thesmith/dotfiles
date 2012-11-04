@@ -29,28 +29,18 @@ export EDITOR=vim
 #alias ls='ls --color=auto'
 alias ll='ls -lG'
 alias la='ls -alG'
-alias vi='vim'
 alias screen='TERM=screen screen'
-
-# nginx
-alias nginx_start='launchctl load /usr/local/Cellar/nginx/1.0.4/org.nginx.nginx.plist'
-alias nginx_stop='launchctl unload /usr/local/Cellar/nginx/1.0.4/org.nginx.nginx.plist'
-alias nginx_restart='nginx_stop; nginx_start;' 
-
-# php-fpm
-alias fpm_start='launchctl load /usr/local/Cellar/php/5.3.6/org.php.php-fpm.plist'
-alias fpm_stop='launchctl unload /usr/local/Cellar/php/5.3.6/org.php.php-fpm.plist'
-alias fpm_restart='fpm_stop; fpm_start'
-
-#alias masteruk='ssh master.uk.top10.com'
-#alias masterus='ssh master.top10.com'
+alias pgrep='ps aux | grep -v grep | grep '
 
 export TERM=xterm-color
 export SCALA_HOME=/Users/bens/bin/scala
-export PATH=$PATH:/var/lib/gems/1.8/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/usr/share/ant/bin:$SCALA_HOME/bin:/Library/appengine-java-sdk-1.2.6/bin:./bin:.:~/bin
+export PATH=$PATH:/var/lib/gems/1.8/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/usr/share/ant/bin:$SCALA_HOME/bin:/Library/appengine-java-sdk-1.2.6/bin:./bin:.:~/bin:~/pear/bin
 #export GEM_HOME=/usr/lib/ruby/gems/1.8
 #export RUBYLIB=/usr/lib/ruby/1.8:/usr/local/lib/site_ruby/1.8
 export ECHO_NEST_API_KEY=AFB4HZSDSRBTJGC5Q
 export NODE_PATH=/usr/local/lib/node
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+. ~/.bashrc_top10
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
