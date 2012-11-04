@@ -7,23 +7,11 @@ else
   PATH="/usr/local/bin:/usr/bin:/bin:/usr/games"
 fi
 
-if [ "$PS1" ]; then
-  if [ "$BASH" ]; then
-    PS1='\u@\h:\w\$ '
-  else
-    if [ "`id -u`" -eq 0 ]; then
-      PS1='# '
-    else
-      PS1='$ '
-    fi
-  fi
-fi
-
 export PATH
 
 umask 022
 export HISTSIZE=5000
-export PS1="\[\e]2;\u@\H \w\a\e[0m\][\w] $\[\e[0m\] "
+#export PS1="\[\e]2;\u@\H \w\a\e[0m\][\w] $\[\e[0m\] "
 #export PS1='[\W$(__git_ps1 " (%s)")]\$ '
 export PATH=/usr/local/mysql/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export EDITOR=vim
@@ -48,3 +36,4 @@ export MAVEN_OPTS=-Xmx1024m
 
 source ~/.git-prompt.sh
 source ~/.git-completion.bash
+source ~/.bash-prompt.sh

@@ -1,6 +1,7 @@
 ln -sf `pwd`/bashrc ~/.bashrc
 ln -sf `pwd`/gitignore ~/.gitignore
 ln -sf `pwd`/git-prompt.sh ~/.git-prompt.sh
+ln -sf `pwd`/bash-prompt.sh ~/.bash-prompt.sh
 ln -sf `pwd`/git-completion.bash ~/.git-completion.bash
 ln -sf `pwd`/gvimrc ~/.gvimrc
 ln -sf `pwd`/screenrc ~/.screenrc
