@@ -23,7 +23,7 @@ alias pgrep='ps aux | grep -v grep | grep '
 
 export TERM=xterm-color
 export SCALA_HOME=/Users/bens/bin/scala
-export PATH=$PATH:/var/lib/gems/1.8/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/usr/share/ant/bin:$SCALA_HOME/bin:/Library/appengine-java-sdk-1.2.6/bin:./bin:.:~/bin:~/pear/bin
+export PATH=$PATH:/var/lib/gems/1.8/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/usr/share/ant/bin:$SCALA_HOME/bin:/Library/appengine-java-sdk-1.2.6/bin:./bin:.:~/bin:~/pear/bin:/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin
 
 #export GEM_HOME=/usr/lib/ruby/gems/1.8
 #export RUBYLIB=/usr/lib/ruby/1.8:/usr/local/lib/site_ruby/1.8
