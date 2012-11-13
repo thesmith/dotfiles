@@ -37,3 +37,7 @@ export MAVEN_OPTS=-Xmx1024m
 source ~/.git-prompt.sh
 source ~/.git-completion.bash
 source ~/.bash-prompt.sh
+
+function lag() {
+  ag --color "$@" | less -r
+}
