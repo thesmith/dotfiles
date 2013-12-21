@@ -9,11 +9,10 @@ msgwait 2 # 1 second messages
 term screen-256color
 defutf8 on
 hardstatus alwayslastline                                        
-hardstatus string '%{gk}[ %{G}%H %{g}][%= %{wk}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}][%{Y}%l%{g}]%{=b C}[ %m/%d %c ]%{W}'
+#hardstatus string '%{gk}[ %{G}%H %{g}][%= %{wk}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}][%{Y}%l%{g}]%{=b C}[ %m/%d %c ]%{W}'
 
 startup_message off
 shell bash
-escape ^Pp
 
 # remove some stupid / dangerous key bindings
 bind k
@@ -30,3 +29,15 @@ bind 'W' windowlist
 #f1 and f2, forward and back
 bindkey -k k1 prev
 bindkey -k k2 next
+ 
+# Turn the even more annoying whole-screen-flash-on-tab-complete "feature"
+vbell off
+ 
+# I use control+a for beginning-of-line, this remaps it to the tick/tilda key
+escape ``
+ 
+# Bind tick+e to show the tick character since tick+tick is too convenience to toggle windows
+escape `e
+ 
+# Window list at the bottom. hostname, centered tabs and redmarked active windows:
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'

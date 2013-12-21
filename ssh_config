@@ -142,3 +142,7 @@ Host *
 #   TunnelDevice any:any
 #   PermitLocalCommand no
 #   VisualHostKey no
+
+# XAuthLocation added by XQuartz (http://xquartz.macosforge.org)
+Host *
+    XAuthLocation /opt/X11/bin/xauth

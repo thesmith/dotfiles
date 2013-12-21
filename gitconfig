@@ -40,6 +40,5 @@
     added = yellow
     changed = green
     untracked = cyan
-[github]
-	user = thesmith
-	token = 42e91a027d45416f28b2d71ad36d3eef
+[push]
+	default = simple
