@@ -171,6 +171,14 @@ map ,b :FuzzyFinderBuffer<CR>
 let g:AutoComplPop_IgnoreCaseOption = 0
 let g:AutoComplPop_BehaviorKeywordLength = 2
 
+" ctrlp *************
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+"--------------------
+" Function: Open tag under cursor in new tab
+" Source:   http://stackoverflow.com/questions/563616/vimctags-tips-and-tricks
+"--------------------
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 
 " -----------------------------------------------------------------------------  
 " |                             OS Specific                                   |

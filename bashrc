@@ -22,17 +22,18 @@ alias screen='TERM=screen screen'
 alias pgrep='ps aux | grep -v grep | grep '
 
 export TERM=xterm-color
-export PATH=$PATH:/var/lib/gems/1.8/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/local/git/bin:/usr/share/ant/bin:$SCALA_HOME/bin:/Library/appengine-java-sdk-1.2.6/bin:./bin:.:~/bin:~/pear/bin:/Applications/Sublime\ Text.app/Contents/SharedSupport/bin
+export PATH=$PATH:/var/lib/gems/1.8/bin:/sbin:/bin:/usr/sbin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/local/git/bin:/usr/share/ant/bin:$SCALA_HOME/bin:/Library/appengine-java-sdk-1.2.6/bin:./bin:.:~/bin:~/pear/bin:/Applications/Sublime\ Text.app/Contents/SharedSupport/bin
 
 #export GEM_HOME=/usr/lib/ruby/gems/1.8
 #export RUBYLIB=/usr/lib/ruby/1.8:/usr/local/lib/site_ruby/1.8
 export ECHO_NEST_API_KEY=AFB4HZSDSRBTJGC5Q
 export NODE_PATH=/usr/local/lib/node
 export MAVEN_OPTS=-Xmx4096m
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 export WORKFEED_JS_COVERAGE_HOME=/Users/besmith/projects/workfeed_js_coverage
 export YAMJS_COVERAGE_HOME=/Users/besmith/projects/yamjs_coverage
 export YAMJS_HOME=/Users/besmith/projects/yamjs
+export DISABLE_COVERAGE=true
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
