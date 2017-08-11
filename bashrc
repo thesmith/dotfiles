@@ -14,7 +14,7 @@ alias screen='TERM=screen screen'
 export GOPATH=$HOME/go
 export PATH=$PATH:.:/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:/usr/local/opt/go/libexec/bin:$GOPATH/bin:/sbin
 
-export NODE_PATH=/usr/local/lib/node
+export NODE_PATH=
 export MAVEN_OPTS=-Xmx4096m
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
@@ -27,4 +27,3 @@ complete -C aws_completer aws
 function lag() {
   ag --color "$@" | less -r
 }
-export NODE_PATH=/usr/local/lib/node:/usr/local/lib/node_modules
